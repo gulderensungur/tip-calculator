@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Spli<br />tter</h1>
+      <div class="calculator-wrapper">
+        <div class="inputs-wrapper">
+          <div class="input-wrapper">
+            <h2 class="input-title">Bill</h2>
+            <div class="input-inner-wrapper">
+              <img src="./images/icon-dollar.svg" alt="Dollar sign" />
+              <input type="text" placeholder="0" id="bill-amount-input" />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <h2 class="input-title">Select Tip %</h2>
+            <div class="selects-wrapper">
+              <label class="tip-label"><input type="checkbox" />5%</label>
+              <label class="tip-label"><input type="checkbox" />10%</label>
+              <label class="tip-label"><input type="checkbox" />15%</label>
+              <label class="tip-label"><input type="checkbox" />25%</label>
+              <label class="tip-label"><input type="checkbox" />50%</label>
+              <label class="tip-label"><input type="checkbox" />Custom</label>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <h2 class="input-title">Number of People</h2>
+            <div class="input-inner-wrapper">
+              <img src="./images/icon-person.svg" alt="Person icon" />
+              <input type="text" placeholder="0" id="people-count-input" />
+            </div>
+          </div>
+        </div>
+        <div class="amounts-wrapper">
+          <div class="amounts-text-wrapper">
+            <div class="amount-wrapper">
+              <div class="amount-title-wrapper">
+                <p class="amount-main-title">Tip Amount</p>
+                <p class="amount-sub-title">/ person</p>
+              </div>
+              <div class="amount-price-wrapper">
+                <img src="./images/icon-dollar.svg" alt="Dollar sign" />
+                <p>0.00</p>
+              </div>
+            </div>
+            <div class="amount-wrapper">
+              <div class="amount-title-wrapper">
+                <p class="amount-main-title">Total</p>
+                <p class="amount-sub-title">/ person</p>
+              </div>
+              <div class="amount-price-wrapper">
+                <img src="./images/icon-dollar.svg" alt="Dollar sign" />
+                <p>0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button>RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
